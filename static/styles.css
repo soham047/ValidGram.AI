@@ -1,0 +1,65 @@
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+html, body, div{
+    scroll-behavior: smooth;
+}
+/* Hero Section */
+header {
+    background: rgb(156,65,216);
+    background: linear-gradient(90deg, rgba(156,65,216,1) 16%, rgba(75,142,246,1) 53%, rgba(100,238,220,1) 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+/* Features Section */
+#features i:hover {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#real_or_fake{
+    padding-top: 50px;
+}
+
+#predictionTabs{
+    display: flex;
+    justify-content: space-around;
+}
+
+#predictionTabs .nav-item{
+    flex :1;
+}
+
+#predictionTabs .nav-link{
+    display: flex; /* Makes the link a flex container */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    width: 100%; /* Ensures the link spans the full width of the parent */
+    height: 100%; /* Ensures it matches the height of the container */
+    border-radius: 0; 
+    color: rgb(63, 63, 63);
+}
+
+#predictionTabs .nav-link.active {
+    color: #007bff;
+}
+
+#results p{
+    font-size: larger;
+}
+
+#scrl:hover{
+    background-color: #a12fb3;
+    color: white;
+    transition: 0.35s;
+}
