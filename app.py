@@ -15,11 +15,25 @@ app.secret_key = 'django-insecure-9kd1^6fjs$2t3rwjpzzf9#*3-ohw5zzu6wd36io9gsppvu
 model = joblib.load('models/model5.joblib')
 sc = joblib.load('models/StdScale (2).joblib')
 
+# Instaloader Session Management
+loader = instaloader.Instaloader()
+
+def login_instaloader():
+    try:
+        # Load session from file if exists
+        loader.load_session_from_file('sirenhead943')  # Change 'sirenhead943' to your username
+    except FileNotFoundError:
+        # If session file doesn't exist, log in and save the session
+        loader.login("sirenhead943", "Headsiren943@")  # Use your actual username and password
+        loader.save_session_to_file()  # Save session to file for later use
+
+# Call the login function once at the start of the app
+login_instaloader()
+
 # Data scraping function
 def scrape_insta(username):
-    loader = instaloader.Instaloader()
     try:
-        loader.login("sirenhead943", "Headsiren943@")
+        # Scrape profile data using the session
         profile = instaloader.Profile.from_username(loader.context, username)
 
         data = {
