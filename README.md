@@ -1,6 +1,6 @@
 # ValidGram.AI
 
-Validgram.ai is a web application designed to interact with Instagram profiles, leveraging the Instaloader module for data scraping. It provides a user-friendly interface to analyze and retrieve Instagram data.
+Validgram.ai is a dynamic website to detect suspicious instagram accounts. It leverages machine learning with python in the backend, Instaloader module for scraping data, html-css-js for web development and flask for the integration.
 
 # Features
 
