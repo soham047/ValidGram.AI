@@ -1,6 +1,6 @@
 # ValidGram.AI
 
-Validgram.ai is a dynamic website to detect suspicious instagram accounts. It leverages machine learning with python in the backend, Instaloader module for scraping data, html-css-js for web development and flask for the integration.
+ValidGram.AI is a dynamic website to detect suspicious instagram accounts. It leverages machine learning with python in the backend, Instaloader module for scraping data, html-css-js for web development and flask for the integration.
 
 # Features
 
@@ -26,8 +26,8 @@ pip (Python package manager)
 
 1. Clone the repository:
 
-git clone https://github.com/soham047/ValidGram.ai.git  
-cd ValidGram.ai
+git clone https://github.com/soham047/ValidGram.AI.git  
+cd ValidGram.AI
 
 
 2. Install the required modules:
@@ -57,7 +57,7 @@ Data Scraping: Instaloader
 
 Directory Structure
 
-validgram.ai/  
+ValidGram.AI/  
 ├── templates/         # HTML templates  
 ├── static/            # CSS and JavaScript files  
 ├── app.py             # Main Flask application  
