@@ -26,8 +26,8 @@ pip (Python package manager)
 
 1. Clone the repository:
 
-git clone https://github.com/your_username/validgram.ai.git  
-cd validgram.ai
+git clone https://github.com/soham047/ValidGram.ai.git  
+cd ValidGram.ai
 
 
 2. Install the required modules:
